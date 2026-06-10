@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailedViewScreen">
+
+
+
+    <!-- ITEM 1 BLOCK -->
+    <LinearLayout
+        android:id="@+id/llItemRow1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#F0F0F0"
+        android:padding="12dp"
+        android:layout_marginBottom="12dp"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tvItemName1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gear Item 1"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="#333333"/>
+
+        <EditText
+            android:id="@+id/etCategory1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Category (e.g., Camping, Cooking)"/>
+
+        <EditText
+            android:id="@+id/etQuantity1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Quantity"
+            android:inputType="number"/>
+
+        <EditText
+            android:id="@+id/etComment1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Comments/Notes"/>
+    </LinearLayout>
+
+    <!-- ITEM 2 BLOCK -->
+    <LinearLayout
+        android:id="@+id/llItemRow2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#F0F0F0"
+        android:padding="12dp"
+        android:layout_marginBottom="12dp"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tvItemName2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gear Item 2"
+            android:textStyle="bold"
+            android:textSize="18sp"/>
+
+        <EditText
+            android:id="@+id/etCategory2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Category"/>
+
+        <EditText
+            android:id="@+id/etQuantity2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Quantity"
+            android:inputType="number"/>
+
+        <EditText
+            android:id="@+id/etComment2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Comments/Notes"/>
+    </LinearLayout>
+
+    <!-- ITEM 3 BLOCK -->
+    <LinearLayout
+        android:id="@+id/llItemRow3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#F0F0F0"
+        android:padding="12dp"
+        android:layout_marginBottom="12dp"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tvItemName3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gear Item 3"
+            android:textStyle="bold"
+            android:textSize="18sp"/>
+
+        <EditText
+            android:id="@+id/etCategory3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Category"/>
+
+        <EditText
+            android:id="@+id/etQuantity3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Quantity"
+            android:inputType="number"/>
+
+        <EditText
+            android:id="@+id/etComment3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Comments/Notes"/>
+    </LinearLayout>
+
+    <!-- ITEM 4 BLOCK -->
+    <LinearLayout
+        android:id="@+id/llItemRow4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#F0F0F0"
+        android:padding="12dp"
+        android:layout_marginBottom="12dp"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tvItemName4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gear Item 4"
+            android:textStyle="bold"
+            android:textSize="18sp"/>
+
+        <EditText
+            android:id="@+id/etCategory4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Category"/>
+
+        <EditText
+            android:id="@+id/etQuantity4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Quantity"
+            android:inputType="number"/>
+
+        <EditText
+            android:id="@+id/etComment4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Comments/Notes"/>
+    </LinearLayout>
+
+    <!-- Navigation Button -->
+    <Button
+        android:id="@+id/btnBackToBase"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Back to Base"
+        android:backgroundTint="#FF5722"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="30dp"/>
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

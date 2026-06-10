@@ -8,6 +8,7 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import android.content.Intent
 
 class MainScreen : AppCompatActivity(){
 
@@ -36,22 +37,28 @@ override fun onCreate(savedInstanceState: Bundle?) {
     btnGear = findViewById(R.id.btnGear)
     txtTotalItems = findViewById(R.id.txtTotalItems)
 
-    btnGear.setOnClickListener {
-        val listGearInputs = listOf(edtGear1, edtGear2, edtGear3, edtGear4)
+   btnGear.setOnClickListener {
+       val listGearInputs = listOf(edtGear1, edtGear2, edtGear3, edtGear4)
 
-        var intTotalItems = 0
+       //Array list to store only items the user typed
+       val listPackedItems = ArrayList<String>()
+       for (inputField in listGearInputs){
+           val strText = inputField.text.toString().trim()
+           if (strText.isNotEmpty()){
+               listPackedItems.add(strText)//Add gear name to list
+           }
+       }
+       //only move to next screen if they packed one item
+       if (listPackedItems.isNotEmpty()) {
+           val intentDetails = Intent(this, DetailedViewScreen::class.java)
 
-        //The loop checks input field one by one
-        for (inputField in listGearInputs){
-            //if the user typed something (the field is not blank)
-            if (inputField.text.toString().trim().isNotEmpty()){
-                intTotalItems++ // Add 1 to our count
-
-            }
-        }
-        //Output final total to screen
-        txtTotalItems.text = "Total items packed: $intTotalItems"
-    }
+           //Pass the list of gear names to next screen
+           intentDetails.putStringArrayListExtra("KEY_GEAR_LIST", listPackedItems)
+           startActivity(intentDetails)
+       }else{
+           txtTotalItems.text = "Please pack at least 1 item first"
+       }
+   }
 
 
 
