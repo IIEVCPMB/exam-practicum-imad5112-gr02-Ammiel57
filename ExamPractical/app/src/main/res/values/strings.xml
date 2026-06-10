@@ -1,4 +1,12 @@
 <resources>
     <string name="app_name">ExamPracticum</string>
     <string name="campsite_commander">Campsite Commander</string>
+    <string name="base_camp_dashboard">Base Camp Dashboard</string>
+    <string name="add_gear">Add Gear</string>
+    <string name="enter_camping_gears">Enter Camping Gears</string>
+    <string name="gear_1">Gear 1</string>
+    <string name="gear_2">Gear 2</string>
+    <string name="gear_3">Gear 3</string>
+    <string name="gear_4">Gear 4</string>
+    <string name="total_items_packed_0">Total Items Packed: 0</string>
 </resources>
